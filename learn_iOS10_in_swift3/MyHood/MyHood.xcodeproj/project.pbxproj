@@ -13,6 +13,9 @@
 		777D2CBF1FF974E800AFC80B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 777D2CBE1FF974E800AFC80B /* Assets.xcassets */; };
 		777D2CC21FF974E800AFC80B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 777D2CC01FF974E800AFC80B /* LaunchScreen.storyboard */; };
 		777D2CCB1FF975D500AFC80B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777D2CCA1FF975D500AFC80B /* Post.swift */; };
+		777D2CCD1FF97CA600AFC80B /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777D2CCC1FF97CA600AFC80B /* PostCell.swift */; };
+		777D2CD01FF9826F00AFC80B /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777D2CCF1FF9826F00AFC80B /* AddPostViewController.swift */; };
+		777D2CD31FF9902500AFC80B /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777D2CD21FF9902500AFC80B /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		777D2CC11FF974E800AFC80B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		777D2CC31FF974E800AFC80B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		777D2CCA1FF975D500AFC80B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		777D2CCC1FF97CA600AFC80B /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		777D2CCF1FF9826F00AFC80B /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
+		777D2CD21FF9902500AFC80B /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,8 @@
 		777D2CB61FF974E800AFC80B /* MyHood */ = {
 			isa = PBXGroup;
 			children = (
+				777D2CD11FF9900300AFC80B /* Service */,
+				777D2CCE1FF981F700AFC80B /* Controller */,
 				777D2CC91FF975B700AFC80B /* Model */,
 				777D2CB71FF974E800AFC80B /* AppDelegate.swift */,
 				777D2CB91FF974E800AFC80B /* ViewController.swift */,
@@ -63,6 +71,7 @@
 				777D2CBE1FF974E800AFC80B /* Assets.xcassets */,
 				777D2CC01FF974E800AFC80B /* LaunchScreen.storyboard */,
 				777D2CC31FF974E800AFC80B /* Info.plist */,
+				777D2CCC1FF97CA600AFC80B /* PostCell.swift */,
 			);
 			path = MyHood;
 			sourceTree = "<group>";
@@ -73,6 +82,22 @@
 				777D2CCA1FF975D500AFC80B /* Post.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		777D2CCE1FF981F700AFC80B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				777D2CCF1FF9826F00AFC80B /* AddPostViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		777D2CD11FF9900300AFC80B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				777D2CD21FF9902500AFC80B /* DataService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,8 +173,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				777D2CCB1FF975D500AFC80B /* Post.swift in Sources */,
+				777D2CD01FF9826F00AFC80B /* AddPostViewController.swift in Sources */,
 				777D2CBA1FF974E800AFC80B /* ViewController.swift in Sources */,
+				777D2CD31FF9902500AFC80B /* DataService.swift in Sources */,
 				777D2CB81FF974E800AFC80B /* AppDelegate.swift in Sources */,
+				777D2CCD1FF97CA600AFC80B /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
