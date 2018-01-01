@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Park_ly" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="izs-Yh-iX4">
+                                <rect key="frame" x="0.0" y="148" width="375" height="414"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dta-af-CdG" customClass="RoundButton" customModule="Park_ly" customModuleProvider="target">
+                                <rect key="frame" x="149.5" y="562" width="75" height="75"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="bFS-tL-e3J"/>
+                                    <constraint firstAttribute="width" constant="75" id="gwV-4k-ELL"/>
+                                </constraints>
+                                <state key="normal" image="parkCar"/>
+                                <connections>
+                                    <action selector="parkBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ytI-do-SV2"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="park.ly-logo" translatesAutoresizingMaskIntoConstraints="NO" id="psA-ak-XrS">
+                                <rect key="frame" x="0.0" y="20" width="375" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="znq-Dg-krT"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="psA-ak-XrS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="B1w-lO-H5D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dta-af-CdG" secondAttribute="bottom" constant="30" id="T4X-hz-EEY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="psA-ak-XrS" secondAttribute="trailing" id="Uny-gZ-mdR"/>
+                            <constraint firstItem="izs-Yh-iX4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Z3X-rx-BHG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="izs-Yh-iX4" secondAttribute="trailing" id="aqh-MO-u7O"/>
+                            <constraint firstItem="izs-Yh-iX4" firstAttribute="top" secondItem="psA-ak-XrS" secondAttribute="bottom" id="dur-ur-H8S"/>
+                            <constraint firstItem="dta-af-CdG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fPV-AA-L8R"/>
+                            <constraint firstItem="psA-ak-XrS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kXX-LO-Itu"/>
+                            <constraint firstItem="dta-af-CdG" firstAttribute="top" secondItem="izs-Yh-iX4" secondAttribute="bottom" id="p2H-Fp-riU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="izs-Yh-iX4" id="qJC-fr-w72"/>
+                        <outlet property="parkBtn" destination="dta-af-CdG" id="h2h-CT-Ktn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="park.ly-logo" width="273" height="75"/>
+        <image name="parkCar" width="51" height="39"/>
+    </resources>
+</document>
