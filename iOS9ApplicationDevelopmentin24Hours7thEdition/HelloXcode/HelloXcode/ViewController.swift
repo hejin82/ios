@@ -15,10 +15,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         var myMessage: UILabel
         var myUnusedVariable: String
-        myMessage = UILabel(frame: CGRect(x: 30, y: 50, width: 50, height: 50))
+        myMessage = UILabel(frame: CGRect(x: 30, y: 50, width: 300, height: 50))
         myMessage.font = UIFont.systemFont(ofSize: 48)
-        myMessage.text = "HEllo Xcode"
-        myMessage.textColor = UIColor.blue
+        myMessage.text = "Hello Xcode"
+        myMessage.textColor = UIColor(patternImage: UIImage(named: "Background")!)
         view.addSubview(myMessage)
         NSLog("Hello Xcode, Again")
     }
